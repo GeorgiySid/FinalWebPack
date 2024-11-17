@@ -1,0 +1,132 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+.burgerMenu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100%;
+    box-shadow: 16px 0 52px #0E185033;
+    z-index: 100;
+    background-color: $white;
+    transition:all 1s;
+}
+
+.burgerMenu__header {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.burgerMenu__cancel-button {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.burgerMenu__search-button {
+    margin-left: auto;
+    margin-right: 20px;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color:$text-color;
+}
+.burgerMenu__link{
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:$text-color;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+@media(hover:hover) {
+    .burgerMenu__link:hover{
+        text-decoration: underline;
+    }
+}
+.burgerMenu__logo {
+    margin-left: 10px;
+    width: 97px;
+    height: 51px;
+    align-self: center;
+}
+
+.burgerMenu__navigation {
+    position: relative;
+}
+
+
+.burgerMenu__link--active::before {
+    content: "";
+    background-color: $blue;
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    border-radius: 6px;
+}
+
+.burgerMenu__link--active {
+    position: relative;
+    a{
+        color: $secondary-text-color !important;
+    }
+}
+
+.burgerMenu__footer_burger {
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+.burgerMenu__contact-buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.burgerMenu__mail {
+    font-weight: 500;
+    color: $secondary-text-color;
+}
+
+.burgerMenu__phone {
+    font-size: 24px;
+    font-weight: bold;
+    color: $text-color;
+}
+
+.burgerMenu__language {
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.burgerMenu__lang-link--active {
+    color: $secondary-text-color;
+}
+.hide{
+    display: none;
+}
+@include xxl{
+    .hide{
+        display: flex;
+    }
+    body{
+        height: 100%;
+        position: relative;
+    }
+    .burgerMenu {
+        position: absolute;
+        box-shadow:none;
+        &__navigation{
+            margin-bottom: 100px;
+        }
+        &__footer_burger{
+            margin-bottom: 2000px;
+        }
+        &__cancel-button{
+            display: none;
+        }
+    }
+}

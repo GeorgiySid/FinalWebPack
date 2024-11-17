@@ -1,0 +1,75 @@
+.callMenu{
+  position: fixed;
+  display: flex;
+  right: 0;
+  flex-direction: column;
+  max-width: 320px;
+  height: 676px;
+  z-index: 100;
+  background-color: $white;
+  box-shadow: -8px 7px 8px 0px rgba(14,24,80,.2);
+  transition:all 1s;
+  padding: 24px 16px 75px;
+  border-left:1px solid #D9FFF5;
+  &_title{
+    font-weight: 600;
+  }
+  &--hide{
+    display: none !important;
+  }
+}
+.callMenu__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  &_input{
+    width: 288px;
+    min-height: 48px;
+    border-radius: 8px;
+    border: 0 ;
+    border:1px solid  $gray;
+  }
+}
+.callMenu__list_input::placeholder{
+  color: $secondary-text-color;
+  font-size:16px;
+  font-family: $font-family;
+  padding-left: 10px;
+}
+.callMenu__title_text::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  left: 0;
+  top:80px;
+  background-color: $blue;
+  position: absolute;
+  border-radius: 20px;
+}
+.callMenu__infoPolici{
+    &_text{
+      font-size: 14px;
+      &--a{
+        color:$primary-button-color;
+      }
+    }
+
+}
+@include xl{
+  .callMenu__header_cancelButton{
+    position: absolute;
+    top: 40px;
+    right: 380px;
+  }
+  .callMenu__title_text::before{
+    top:40px;
+  }
+}
+@include xxl{
+  .callMenu{
+    width: 440px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+}

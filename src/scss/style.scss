@@ -1,0 +1,14 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './layot/header/header.scss';
+@import './base/base';
+@import './components/callMenu/callMenu';
+@import './components/messMenu/messMenu';
+@import './layot/headerLogoSwiper/headerLogoSwiper';
+@import './layot/headerLogoSwiper/headerRepairSwiper';
+@import './layot/headerLogoSwiper/headerServiceSwiper';
+@import './layot/main/main';
+@import './components/buttons/buttons';
+@import './components/burgerMenu/burgerMenu';
+@import './components/buttons/btn-readMore';
+@import './layot/footer/footer';

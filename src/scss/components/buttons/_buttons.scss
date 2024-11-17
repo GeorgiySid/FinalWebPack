@@ -1,0 +1,92 @@
+@import '../../abstracts/variables';
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: $primary-button-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s;
+  &:active {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+@media (hover: hover) {
+  button {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.menuSwiperLogo__logoButton {
+  border: 2px solid $primary-button-color;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition-duration: 0.5s;
+}
+.messMenu__button{
+  font-family: $font-family;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  background-color: $primary-button-color;
+  transition-duration: 0.5s;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+  p{
+    padding-right: 5px;
+  }
+}
+.callMenu__button{
+  font-family: $font-family;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  background-color: $primary-button-color;
+  transition-duration: 0.5s;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+  p{
+    padding-right: 5px;
+  }
+}
+.menuSwiperService__serviceButton {
+  display: flex;
+  position: absolute;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  background-color: $primary-button-color;
+  transition-duration: 0.5s;
+  align-items: center;
+  justify-content: center;
+  top: 70%;
+  left: 100px;
+  p {
+    font-family: $font-family;
+    margin-right: 10px;
+    color: $white;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+.menuSwiperService__serviceButton_dropdown {
+  color: $white;
+}

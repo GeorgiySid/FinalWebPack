@@ -1,0 +1,84 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 88px;
+  background-color: $white;
+  column-gap: 20px;
+  border-bottom: 1px solid #d9fff5;
+}
+.header {
+  &__boxLeft {
+    display: flex;
+    margin-left: 10px;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+    margin-right: auto;
+    &_logo {
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100px;
+      height: 51px;
+    }
+  }
+
+  &__boxRight {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 32px;
+      background-color: $gray;
+      top: 5px;
+      left: -10%;
+      border-radius: 6px;
+    }
+  }
+}
+@include xxl {
+  header {
+    display: none;
+  }
+}
+
+.header__boxRight_call-button,
+.header__boxRight_message-button,
+.header__boxRight_profile-button {
+  display: none;
+}
+
+@include xl {
+  .header__boxRight_call-button,
+  .header__boxRight_message-button,
+  .header__boxRight_profile-button {
+    display: flex;
+  }
+  .header__boxRight::before {
+    left: 56%;
+  }
+  .header__boxLeft::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background-color: $gray;
+    left: 60px;
+    border-radius: 6px;
+  }
+
+  .header__boxRight {
+    padding-right: 20px;
+  }
+}

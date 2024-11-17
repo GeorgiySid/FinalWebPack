@@ -1,0 +1,188 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+
+.swiperServiceMainContainer{
+    margin-top: 25px;
+    min-height: 284px;
+}
+.headerSwiper__title {
+    height: 70px;
+    font-size: 16px;
+    color: $secondary-text-color;
+    padding: 10px;
+    padding-top: 0;
+    border-top:1px solid #D9FFF5;
+    background: linear-gradient(270deg, $background-color 0%, $white 98.61%);
+
+}
+
+@include xl{
+    .headerSwiper__title{
+        height: 56px;
+        padding: 0;
+        padding-left: 10px;
+    }
+}
+.menuSwiperLogo {
+    min-height: 125px;
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.menuSwiperLogo__logoCont .menuSwiperLogo__logoElement {
+    display: flex;
+    width: 240px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $gray;
+}
+
+.menuSwiperLogo__logoButton {
+    border: 2px solid $primary-button-color;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.menuSwiperLogo__logoButton:active {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+
+.menuSwiperLogo__logoPic {
+    max-width: 50%;
+    padding-left: 10px;
+}
+.swiper-pagination{
+    padding-top: 20px;
+}
+.swiper-pagination-logo {
+    position: absolute;
+    top:100px;
+}
+
+.readMore-button-swiper {
+    display: none;
+}
+
+.readMore-button-descrip {
+    display: none;
+}
+
+.readMore-button:active {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+.main_slideMenu_veil-swiperLogo{
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 81px;
+    right: 0px;
+    z-index: 2;
+
+
+}
+.menuSwiperLogo .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    font-size: 14px;
+    background-color: $light-gray;
+}
+
+@include xl {
+    .swiper-pagination{
+        display: none;
+    }
+    .menuSwiperLogo {
+        display: grid;
+        overflow: hidden;
+        min-height: 150px;
+    }
+
+    .readMore-button-swiper {
+        display: flex;
+        font-family: $font-family;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        width: auto;
+        display: flex;
+        justify-self: start;
+        align-items: center;
+        margin-left: 30px;
+        color: #1B1C21;
+        column-gap: 5px;
+        margin-top: 10px;
+        border: 0;
+        background-color: $background-color;
+        transition-duration: 0.5s;
+    }
+
+    .readMore-button-expand {
+        display: flex;
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: center;
+        left: -15px;
+        transform: rotate(0deg);
+        transition-duration: 0.2s;
+    }
+
+    .readMore-button-descrip {
+        display: flex;
+    }
+
+    .menuSwiperLogo .menuSwiperLogo__logoElement {
+        display: flex;
+        max-width: 224px;
+        height: 72px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        border-radius: 6px;
+        border: 1px solid $gray;
+    }
+
+    .menuSwiperLogo .menuSwiperLogo__logoCont {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        row-gap: 10px;
+        height: 165px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+}
+
+@include xxl {
+    body {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+    .menuSwiperLogo .menuSwiperLogo__logoCont {
+        max-width: 1440px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

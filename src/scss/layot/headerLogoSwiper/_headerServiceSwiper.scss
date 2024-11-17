@@ -1,0 +1,211 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+.menuServiceDesktop-container {
+  display: none;
+}
+.swiperServiceMainContainer {
+  font-family: $font-family !important;
+  min-height: 300px;
+  position: relative !important;
+}
+.menuSwiperService__serviceElement {
+  position: relative;
+  width: 260px;
+  height: 200px;
+  ul {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+    list-style-type: none;
+    li {
+      color: $secondary-text-color;
+      font-size: 14px;
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+.menuSwiperService {
+  min-height: 125px;
+  display: flex;
+  margin-left: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+.menuSwiperService__serviceElement {
+  p {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+.menuSwiperService__serviceCont .menuSwiperService__serviceElement {
+  width: 240px;
+  max-height: 170px;
+  align-items: center;
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $gray;
+}
+
+.menuSwiperService__serviceButton:active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
+
+.swiper-pagination-service {
+  position: absolute;
+  top: 260px !important;
+}
+
+.readMore-button-swiper {
+  display: none;
+}
+
+.readMore-button-descrip {
+  display: none;
+}
+
+.readMore-button:active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
+
+.menuSwiperService .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  background-color: $light-gray;
+}
+
+@include xl {
+  .swiper-pagination {
+    display: none;
+  }
+  .menuSwiperService {
+    display: none;
+  }
+  .menuSwiperService__serviceButton {
+    margin-top: 10px;
+    margin-left: 5px;
+    position: relative !important;
+    top: 0px !important;
+    left: 0 !important;
+  }
+  .menuServiceDesktop-container {
+    margin-bottom: 24px;
+    display: block;
+    &_title {
+      padding-top: 16px;
+      display: grid;
+      grid-template-columns: 372px 96px 101px;
+      color: $secondary-text-color;
+    }
+    &_list {
+      border-radius: 10px;
+      background-color: $white;
+      display: grid;
+      grid-template-columns: 372px 96px 101px 119px;
+      grid-template-rows: 64px 64px 64px 64px 64px;
+      margin-left: 24px;
+      margin-right: 24px;
+      padding-top: 10px;
+      padding-left: 20px;
+
+      &_wrap {
+        display: flex;
+        border-bottom: 1px solid $gray;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  }
+  .menuServiceDesktop-container_list_wrap-last {
+    border: 0;
+  }
+  .readMore-button-swiper {
+    display: flex;
+    font-family: $font-family;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    width: auto;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    margin-left: 30px;
+    color: #1b1c21;
+    column-gap: 5px;
+    margin-top: 10px;
+    border: 0;
+    background-color: $background-color;
+    transition-duration: 0.5s;
+  }
+
+  .readMore-button-expand {
+    display: flex;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: center;
+    left: -15px;
+    transform: rotate(0deg);
+    transition-duration: 0.2s;
+  }
+
+  .readMore-button-descrip {
+    display: flex;
+  }
+
+  .menuSwiperService .menuSwiperService__serviceElement {
+    display: flex;
+    max-width: 224px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $gray;
+  }
+
+  .menuSwiperService .menuSwiperService__ServiceCont {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 10px;
+    height: 165px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+}
+
+@include xxl {
+  .swiper-pagination {
+    display: none;
+  }
+  .menuServiceDesktop-container {
+    &_title {
+      grid-template-columns: 480px 250px 101px;
+    }
+    &_list {
+      grid-template-columns: 480px 250px 101px 200px;
+    }
+  }
+  .menuServiceDesktop-container_list_button {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+}

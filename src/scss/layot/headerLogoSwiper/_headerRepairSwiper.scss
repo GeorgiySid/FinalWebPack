@@ -1,0 +1,190 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+.readMore-button-swiperRepair{
+  display: none;
+}
+.swiperRepairMainContainer{
+  margin-top: 10px;
+  min-height: 284px;
+  position: relative !important;
+}
+.menuSwiperRepair {
+  min-height: 125px;
+  display: flex;
+  margin-left: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+.menuSwiperRepair__repairElement{
+  p{
+    margin-left:10px;
+    font-weight: bold;
+  }
+}
+.menuSwiperRepair__repairCont .menuSwiperRepair__repairElement {
+
+  width: 240px;
+  height: 160px;
+  align-items: center;
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $gray;
+}
+
+.menuSwiperRepair__repairButton {
+  border: 2px solid $primary-button-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 190px;
+  margin-top: 50px;
+  transition-duration: 0.5s;
+}
+
+.menuSwiperRepair__repairButton:active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
+
+.swiper-pagination-repair{
+  position: absolute;
+  top: 250px !important;
+}
+
+.readMore-button-swiper {
+  display: none;
+}
+
+.readMore-button-descrip {
+  display: none;
+}
+
+.readMore-button:active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
+
+.menuSwiperRepair .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  background-color: $light-gray;
+}
+.main_slideMenu_veil-swiperRepair{
+  position: absolute;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+  width: 24px;
+  height: 180px;
+  right: 0px;
+  z-index: 2;
+}
+@include xl {
+  .swiper-pagination{
+      display: none;
+  }
+  .menuSwiperRepair__repairElement{
+    p{
+      margin-bottom: 60%;
+      text-align: start;
+      white-space: nowrap;
+    }
+  }
+  .menuSwiperRepair {
+      max-width: 768;
+      min-height:190px; // менять на 190px - 400px
+      display: grid;
+      overflow: hidden;
+  }
+  .menuSwiperRepair__repairButton {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.5s;
+    margin: 0;
+    margin-top:100px;
+    margin-right:20px;
+  }
+
+  .readMore-button-swiper {
+      z-index: 2;
+      display: flex;
+      font-family: $font-family;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      width: auto;
+      display: flex;
+      justify-self: start;
+      align-items: center;
+      margin-left: 30px;
+      color: #1B1C21;
+      column-gap: 5px;
+      margin-top: 10px;
+      border: 0;
+      background-color: $background-color;
+      transition-duration: 0.5s;
+  }
+
+  .readMore-button-expand {
+      display: flex;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: center;
+      left: -15px;
+      transform: rotate(0deg);
+      transition-duration: 0.2s;
+  }
+
+  .readMore-button-descrip {
+      display: flex;
+  }
+
+  .menuSwiperRepair .menuSwiperRepair__repairElement {
+      display: flex;
+      max-width: 224px;
+      max-height: 160px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $white;
+      border-radius: 6px;
+      border: 1px solid $gray;
+  }
+
+  .menuSwiperRepair .menuSwiperRepair__repairCont {
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5px;
+      row-gap: 10px;
+      height: 165px;
+      margin-right: 20px;
+      margin-left: 10px;
+  }
+}
+
+@include xxl {
+  body {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .swiper-pagination{
+      display: none;
+  }
+  .menuSwiperRepair .menuSwiperRepair__repairCont {
+      max-width: 1440px;
+      grid-template-columns: repeat(4, 1fr);
+  }
+}

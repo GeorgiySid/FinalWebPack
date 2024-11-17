@@ -1,0 +1,51 @@
+@import '../../abstracts/variables';
+.readMore-button{
+  display: flex;
+  font-family:$font-family;
+  position: relative;
+  font-size:16px;
+  font-weight: 500;
+  width: auto;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  margin-left:30px;
+  color:#1B1C21;
+  column-gap:5px;
+  margin-top:10px;
+  border:0;
+  background-color: $background-color;
+  transition-duration: 0.5s;
+
+   &-expand{
+  display: flex;
+  content:"";
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top:center;
+  left:-15px;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+
+  }
+  &-descrip{
+  display: flex;
+  }
+
+}
+.readMore-button-expand{
+  display: flex;
+  content:"";
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top:center;
+  left:-15px;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+}
