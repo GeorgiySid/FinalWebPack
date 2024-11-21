@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'TT Lakes';
   font-display: swap;
-  src: url('./fonts/TTLakes-Regular.woff') format("woff");
+  src: url("/src/fonts/TTLakes-Regular.ttf") format("ttf"), url("/src/fonts/TTLakes-Regular.woff") format("woff"), url("/src/fonts/TTLakes-Medium.ttf") format("ttf"), url("/src/fonts/TTLakes-Medium.woff") format("woff"), url("/src/fonts/TTLakes-Bold.ttf") format("ttf"), url("/src/fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-}
+  font-style: normal; }
 
 header {
   display: flex;
@@ -76,13 +75,6 @@ header {
     border-radius: 6px; }
   .header__boxRight {
     padding-right: 20px; } }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 body {
   font-family: "TT Lakes", sans-serif;
@@ -194,13 +186,6 @@ p {
     position: absolute;
     right: 0; } }
 
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
 .messMenu {
   position: fixed;
   display: flex;
@@ -301,13 +286,6 @@ p {
     height: 100%;
     position: absolute;
     right: 0; } }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 .swiperServiceMainContainer {
   margin-top: 25px;
@@ -466,13 +444,6 @@ p {
     max-width: 1440px;
     grid-template-columns: repeat(4, 1fr); } }
 
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
 .readMore-button-swiperRepair {
   display: none; }
 
@@ -630,13 +601,6 @@ p {
   .menuSwiperRepair .menuSwiperRepair__repairCont {
     max-width: 1440px;
     grid-template-columns: repeat(4, 1fr); } }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 .menuServiceDesktop-container {
   display: none; }
@@ -808,13 +772,6 @@ p {
   .menuServiceDesktop-container_list_button {
     margin-left: auto;
     margin-right: 40px; } }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 .body__veil {
   width: 100%;
@@ -1055,13 +1012,6 @@ main {
   button:active {
     transform: scale(0.5); } }
 
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
 button {
   width: 40px;
   height: 40px;
@@ -1145,13 +1095,6 @@ button {
 
 .menuSwiperService__serviceButton_dropdown {
   color: #FFFFFF; }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 .burgerMenu {
   position: fixed;
@@ -1264,13 +1207,6 @@ a {
     .burgerMenu__cancel-button {
       display: none; } }
 
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
 .readMore-button {
   display: flex;
   font-family: "TT Lakes", sans-serif;
@@ -1316,13 +1252,6 @@ a {
   left: -15px;
   transform: rotate(0deg);
   transition-duration: 0.2s; }
-
-@font-face {
-  font-family: 'TT Lakes';
-  font-display: swap;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 
 .mainFooter {
   display: flex;
