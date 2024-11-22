@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'TT Lakes';
   font-display: swap;
-  src: url(./fonts/TTLakes-Regular.ttf) format("ttf"), url(./fonts/TTLakes-Regular.woff) format("woff"), url(./fonts/TTLakes-Medium.ttf) format("ttf"), url(./fonts/TTLakes-Medium.woff) format("woff"), url(./fonts/TTLakes-Bold.ttf) format("ttf"), url(./fonts/TTLakes-Bold.woff) format("woff");
+  src: url(../../fonts/TTLakes-Regular.ttf) format("ttf"), url(../../fonts/TTLakes-Regular.woff) format("woff"), url(../../fonts/TTLakes-Medium.ttf) format("ttf"), url(../../fonts/TTLakes-Medium.woff) format("woff"), url(../../fonts/TTLakes-Bold.ttf) format("ttf"), url(../../fonts/TTLakes-Bold.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 
@@ -903,14 +903,16 @@ main {
   overflow: hidden; }
 
 .main_blockInf_first_text_hidden {
-  color: #1B1C21; }
+  color: #1B1C21;
+  width: 100%; }
 
 .main_blockInf_first_text-p {
-  min-width: 288px; }
+  width: 100%; }
 
 .main_blockInf_first_text {
   display: flex;
-  width: 85%;
+  display: flex;
+  width: 100%;
   min-height: 90px;
   font-size: 16px;
   align-self: center;
@@ -978,6 +980,9 @@ main {
     -moz-column-gap: 20px;
          column-gap: 20px;
     justify-content: space-between; }
+  .main__blockInf_first {
+    width: 50%; }
+  .main_blockInf_first_text_hidden,
   .main_blockInf_first_text {
     width: 100%; }
   .main_blockInf_first_text_hidden-p,
@@ -998,12 +1003,11 @@ main {
     margin-left: 10px;
     margin-top: 10px; }
   .main__blockInf_picture_logo {
-    width: 50vw;
     margin-top: 0;
     border-radius: 10px; }
   .main__blockInf_picture {
+    width: 50%;
     margin: 0;
-    min-width: 360px;
     padding-right: 40px; } }
 
 @media (min-width: 1440px) {
